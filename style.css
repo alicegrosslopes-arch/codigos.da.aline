@@ -132,9 +132,28 @@ h2{
     text-decoration: wavy;
     text-decoration-color: #3d261b;
 }
-.pe{
-    width:40;
-.bo{
-    width:50;}
-.bolo{
-    width:70;}
+/* Ajuste proporcional das imagens das receitas */
+
+.pe {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.bo {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.bolo {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
