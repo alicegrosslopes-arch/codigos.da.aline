@@ -1,4 +1,122 @@
-body{
+/* TABELA NUTRICIONAL */
+.nutricao {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #fff8ef;
+    border: 2px solid #d9a066;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    font-family: Arial, sans-serif;
+}
+
+.nutricao h2 {
+    text-align: center;
+    color: #713d20;
+}
+
+.nutricao > p {
+    text-align: center;
+    color: #68452f;
+}
+
+.nutricao details {
+    margin: 15px 0;
+    border: 1px solid #d9a066;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.nutricao summary {
+    padding: 15px;
+    background-color: #f1d2ad;
+    color: #572f19;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nutricao summary:hover {
+    background-color: #e8bd8d;
+}
+
+.nutricao details[open] summary {
+    border-bottom: 1px solid #d9a066;
+}
+
+.tabela-container {
+    padding: 15px;
+    overflow-x: auto;
+}
+
+.tabela-container h3 {
+    color: #713d20;
+    margin-bottom: 5px;
+}
+
+.tabela-container p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.tabela-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.tabela-container th,
+.tabela-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5d6c7;
+}
+
+.tabela-container th {
+    background-color: #713d20;
+    color: white;
+}
+
+.tabela-container tbody tr:nth-child(even) {
+    background-color: #fff1e2;
+}
+
+.tabela-container tbody tr:hover {
+    background-color: #ffe0bd;
+}
+
+.tabela-container td:last-child,
+.tabela-container th:last-child {
+    text-align: right;
+}
+
+.nutricao .aviso-nutricional {
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: italic;
+    color: #775f4d;
+    line-height: 1.5;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 600px) {
+    .nutricao {
+        margin: 20px 10px;
+        padding: 12px;
+    }
+
+    .tabela-container th,
+    .tabela-container td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .nutricao summary {
+        font-size: 14px;
+    }
+}body{
     background-color:#7a5b4b;
 }
 h1{
